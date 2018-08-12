@@ -1,0 +1,42 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/item_card_margin"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--suppress AndroidLintContentDescription -->
+        <ImageView
+            android:id="@+id/thumbnail"
+            style="@style/ItemImage"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_title_gradient_height"
+            android:background="@drawable/dark_gradient"
+            app:layout_constraintBottom_toBottomOf="@+id/thumbnail"/>
+
+        <TextView
+            android:id="@+id/article_title"
+            style="@style/ListItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/thumbnail"/>
+
+        <TextView
+            android:id="@+id/article_subtitle"
+            style="@style/ListItemSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/article_title"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

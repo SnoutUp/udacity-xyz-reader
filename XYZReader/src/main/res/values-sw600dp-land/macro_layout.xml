@@ -1,0 +1,14 @@
+<resources>
+    <!-- detail -->
+    <bool name="detail_is_card">true</bool>
+
+    <integer name="list_column_count">3</integer>
+
+    <dimen name="detail_photo_height">0dp</dimen>
+    <dimen name="detail_card_top_margin">0dp</dimen>
+
+    <dimen name="card_margin_horizontal">256dp</dimen>
+
+    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="fab_margin_side">264dp</dimen>
+</resources>
