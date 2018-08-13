@@ -15,6 +15,7 @@
         android:id="@+id/appbar"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        app:elevation="@dimen/appbar_elevation"
         >
 
         <android.support.design.widget.CollapsingToolbarLayout
@@ -142,6 +143,7 @@
         android:contentDescription="@string/action_share"
         android:layout_marginEnd="@dimen/fab_margin_side"
         android:layout_marginTop="@dimen/fab_margin_push"
+        app:elevation="@dimen/fab_elevation"
 
         />
 
